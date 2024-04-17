@@ -29,7 +29,7 @@ warnings.filterwarnings("ignore")
 st.title('Hasil Analisis Sentimen Aksi Demokrasi di Indonesia pada Komentar Media Sosial YouTube')
 ################# Model Testing Sentiment Result #################
 df_merged = pd.read_csv(
-    "https://raw.githubusercontent.com/kyunghochan/sentiment-analysis-demo/main/data/df_merged.csv")
+    "https://raw.githubusercontent.com/kyunghochan/v2-sentiment-analysis-demo/main/data/df_merged.csv")
 
 st.header('Hasil Sentimen dengan Model')
 labels = ['Negatif', 'Positif']
@@ -117,7 +117,7 @@ st.pyplot(fig)
 ##### SVM #######
 # feature extraction  / Tokenization (Word2Vec)
 df_merged_1 = pd.read_csv(
-    'https://raw.githubusercontent.com/kyunghochan/sentiment-analysis-demo/main/data/df_merged_cut.csv')
+    'https://raw.githubusercontent.com/kyunghochan/v2-sentiment-analysis-demo/main/data/df_merged_cut.csv')
 load_model = load('model/svm_model.joblib')
 X_train, X_test, y_train, y_test = train_test_split(
     df_merged_1['text'], df_merged_1['sentiment'], test_size=0.2, random_state=42)
