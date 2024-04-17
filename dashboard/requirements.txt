@@ -1,0 +1,16 @@
+Babel
+matplotlib
+pillow
+wordcloud
+seaborn
+streamlit
+torch
+transformers
+sastrawi
+tensorflow
+nltk
+joblib
+numpy
+pandas
+nltk
+scikit-learn
