@@ -200,9 +200,9 @@ nb_recall = recall_score(y_test, y_pred_nb)
 # idbert_acc, idbert_precision, idbert_recall = evaluate_model(
 #     model, test_dataloader, device)
 
-idbert_acc = 0.6866295264623955
-idbert_precision = 0.7097625329815304
-idbert_recall = 0.7005208333333334
+idbert_acc = 0.7867203219315896
+idbert_precision = 0.8716417910447761
+idbert_recall = 0.8225352112676056
 
 ################# Performance Comparison #################
 # set the data
