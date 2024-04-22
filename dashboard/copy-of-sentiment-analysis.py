@@ -218,11 +218,11 @@ best_precision_values = None
 best_recall_values = None
 
 for model_name, metrics in models_performance.items():
-    if best_accuracy_values is None or metrics['accuracy'] > best_accuracy_values:
+    if best_accuracy_values is None or (metrics['accuracy'] > best_accuracy_values):
         best_accuracy_values = metrics['accuracy']
-    if best_precision_values is None or metrics['precision'] > best_precision_values:
+    if best_precision_values is None or (metrics['precision'] > best_precision_values):
         best_precision_values = metrics['precision']
-    if best_recall_values is None or metrics['recall'] > best_recall_values:
+    if best_recall_values is None or (metrics['recall'] > best_recall_values):
         best_recall_values = metrics['recall']
 
 st.header('Komparasi Akurasi')
