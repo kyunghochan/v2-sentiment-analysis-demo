@@ -1,6 +1,4 @@
-Babel
 matplotlib
-pillow
 wordcloud
 seaborn
 streamlit
